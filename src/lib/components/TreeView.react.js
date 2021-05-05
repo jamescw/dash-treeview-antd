@@ -37,6 +37,7 @@ export default class TreeView extends Component {
                   onSelect={e => setProps({selected: e})}
                   onCheck={e => setProps({checked: e})}
                   onExpand={e => setProps({expanded: e})}
+                  height={233}
                 >
                   {data ? this.renderTreeNode(data) : ''}
                 </Tree>
